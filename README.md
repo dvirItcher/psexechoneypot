@@ -1,9 +1,3 @@
-This script is a classic example of a **Named Pipe Impersonation** tool. It mimics a legitimate service (like PsExec) to capture the security token of an incoming connection and spawn a command shell using those credentials.
-
-Here is a structured `README.md` file for your project.
-
----
-
 # Windows Named Pipe Honeypot & Token Impersonation
 
 This project is a Python-based security tool designed to demonstrate **Named Pipe Impersonation**. It creates a listener on a specific pipe (defaulting to `\.\pipe\PSEXESVC`) and waits for a client (such as a remote administrator or a script) to connect. Upon connection, the script steals the client's access token and spawns an interactive command shell (`cmd.exe`) running under the client's identity.
@@ -21,6 +15,11 @@ This project is a Python-based security tool designed to demonstrate **Named Pip
 ## 🛠️ Prerequisites
 
 * **Operating System:** Windows (requires Windows APIs).
+* **Appropriate permissions** To check if you have the appropriate permissions, run the command
+```bash
+whoami /priv
+```
+and search for SeImpersonatePrivilege. If it is Disabled, open **secpol.msc** and add the specific permission (you need **Local Admin** to perform this operation).
 * **Language:** Python 3.x.
 * **Libraries:** `pywin32`.
 
@@ -82,4 +81,3 @@ To protect against this type of attack:
 
 ---
 
-**Would you like me to add a section on how to modify the script to log all captured commands to a hidden file?**
