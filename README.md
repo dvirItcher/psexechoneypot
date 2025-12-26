@@ -15,7 +15,7 @@ This project is a Python-based security tool designed to demonstrate **Named Pip
 ## 🛠️ Prerequisites
 
 * **Operating System:** Windows (requires Windows APIs).
-* **Appropriate permissions** To check if you have the appropriate permissions, run the command
+* **Appropriate permissions:** To check if you have the appropriate permissions, run the command as admin
 ```bash
 whoami /priv
 ```
