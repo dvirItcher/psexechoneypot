@@ -47,9 +47,9 @@ pip install pywin32
 > **Note:** This script requires **Administrative privileges** to successfully create pipes and impersonate other users' tokens.
 
 1. Open a terminal as **Administrator**.
-2. Run the script:
+2. Run the compiled script:
 ```bash
-python honeypot.py
+psexehoneypot.exe
 
 ```
 
@@ -67,17 +67,10 @@ psexec \\127.0.0.1 cmd.exe
 
 ## ⚠️ Ethical & Legal Warning
 
-This tool is for **educational and authorized security testing purposes only**. Unauthorized access to computer systems is illegal. The author is not responsible for any misuse of this software. Always obtain written permission before testing on systems you do not own.
+This tool is for **educational and authorized security testing purposes only**. Unauthorized access to computer systems is illegal. Im not responsible for any misuse of this software. Always obtain written permission before testing on systems you do not own.
 
 ---
 
-## 🛡️ Mitigation
+## PS
 
-To protect against this type of attack:
-
-* **Restrict Permissions:** Do not run services or scripts as Domain Admin unless necessary.
-* **Pipe Permissions:** Use specific Discretionary Access Control Lists (DACLs) on pipes to restrict who can connect.
-* **Monitoring:** Monitor for the creation of suspicious pipes and the use of `ImpersonateNamedPipeClient` in non-standard applications.
-
----
-
+I got the idea for this tool from the Print Spooler vulnerability, this tool can be used for all kind of pipe related stuff, just be creative 😊.
