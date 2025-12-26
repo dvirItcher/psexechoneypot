@@ -19,7 +19,7 @@ This project is a Python-based security tool designed to demonstrate **Named Pip
 ```bash
 whoami /priv
 ```
-and search for SeImpersonatePrivilege. If it is Disabled, open **secpol.msc** and add the specific permission (you need **Local Admin** to perform this operation).
+and search for SeImpersonatePrivilege. If it is Disabled, open `secpol.msc` and add the specific permission (you need `Local Admin` to perform this operation).
 * **Language:** Python 3.x.
 * **Libraries:** `pywin32`.
 
