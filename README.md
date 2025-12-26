@@ -2,7 +2,7 @@
 
 This project is a Python-based security tool designed to demonstrate **Named Pipe Impersonation**. It creates a listener on a specific pipe (defaulting to `\.\pipe\PSEXESVC`) and waits for a client (such as a remote administrator or a script) to connect. Upon connection, the script steals the client's access token and spawns an interactive command shell (`cmd.exe`) running under the client's identity.
 
-## 🚀 Features
+## Features
 
 * **Named Pipe Creation:** Sets up a duplex server pipe using `win32pipe`.
 * **Identity Impersonation:** Uses `ImpersonateNamedPipeClient` to assume the security context of the connecting user.
@@ -12,7 +12,7 @@ This project is a Python-based security tool designed to demonstrate **Named Pip
 
 ---
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 * **Operating System:** Windows (requires Windows APIs).
 * **Appropriate permissions:** To check if you have the appropriate permissions, run the command as admin
@@ -32,7 +32,7 @@ pip install pywin32
 
 ---
 
-## 📖 How It Works
+## How It Works
 
 1. **Listen:** The script creates a named pipe at `\\.\pipe\PSEXESVC`. This is the same pipe name used by Sysinternals **PsExec**, making it an effective honeypot for lateral movement.
 2. **Wait:** The script pauses at `ConnectNamedPipe` until a client connects.
@@ -42,7 +42,7 @@ pip install pywin32
 
 ---
 
-## 💻 Usage
+## Usage
 
 > **Note:** This script requires **Administrative privileges** to successfully create pipes and impersonate other users' tokens.
 
@@ -65,7 +65,7 @@ psexec \\127.0.0.1 cmd.exe
 
 ---
 
-## ⚠️ Ethical & Legal Warning
+## Ethical & Legal Warning
 
 This tool is for **educational and authorized security testing purposes only**. Unauthorized access to computer systems is illegal. Im not responsible for any misuse of this software. Always obtain written permission before testing on systems you do not own.
 
