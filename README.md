@@ -74,3 +74,8 @@ This tool is for **educational and authorized security testing purposes only**. 
 ## PS
 
 I got the idea for this tool from the Print Spooler vulnerability, this tool can be used for all kind of pipe related stuff, just be creative 😊.
+
+I am attaching here two links to articles that helped in the construction of this tool, and from which I took the idea for the tool.
+
+Article about Psexec - https://sensepost.com/blog/2025/psexecing-the-right-way-and-why-zero-trust-is-mandatory/
+Article about the Print Spooler vulnerability - https://bl4ckarch.github.io/posts/PrintSpoofer_from_scratch/
