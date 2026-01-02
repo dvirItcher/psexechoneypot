@@ -44,8 +44,6 @@ pip install pywin32
 
 ## Usage
 
-> **Note:** This script requires **Administrative privileges** to successfully create pipes and impersonate other users' tokens.
-
 1. Open a terminal as **Administrator**.
 2. Run the compiled script:
 ```bash
