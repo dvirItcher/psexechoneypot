@@ -69,7 +69,7 @@ This tool is for **educational and authorized security testing purposes only**. 
 
 ---
 
-## PS
+## P.S.
 
 I got the idea for this tool from the Print Spooler vulnerability, this tool can be used for all kind of pipe related stuff, just be creative 😊.
 
